@@ -2,60 +2,58 @@
   background: $solution-color;
   padding-bottom: 60px;
   padding-top: 60px;
+
+  & .studio {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary-body-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+
+  &-items li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &-items li {
+    display: block;
+  }
+
+  &-link {
+    text-decoration: none;
+    line-height: 1.71;
+    font-style: normal;
+    color: $footer-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-link:hover,
+  &-link:focus,
+  &-link:active {
+    color: $decoration-text-color;
+  }
+  &-address {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    color: $primary-body-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-address:hover,
+  &-address:focus {
+    color: $decoration-text-color;
+  }
 }
 
-.footer .studio {
-  display: inline-block;
-  text-decoration: none;
-  color: $primary-body-color;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  font-style: normal;
-  margin-bottom: 20px;
-}
-.footer-items li:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-items li {
-  display: block;
-}
-.footer-link {
-  text-decoration: none;
-  line-height: 1.71;
-  font-style: normal;
-  color: $footer-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-link:hover,
-.footer-link:focus,
-.footer-link:active {
-  color: $decoration-text-color;
-}
-.footer-address {
-  text-decoration: none;
-  font-style: normal;
-  line-height: 1.71;
-  color: $primary-body-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-address:hover,
-.footer-address:focus {
-  color: $decoration-text-color;
-}
-.social-list-end {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 
 .footer-social .social-link {
   display: inline-flex;
@@ -84,6 +82,7 @@
   text-transform: uppercase;
   color: $primary-body-color;
   margin-bottom: 20px;
+  
 }
 
 .footer .container {
@@ -97,89 +96,4 @@
   flex-wrap: wrap;
   max-width: 206px;
   height: 80px;
-}
-
-.visually-hidden {
-  position: absolute;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.footer-input {
-  min-width: 358px;
-  height: 50px;
-  background: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-footer {
-  display: inline-flex;
-  flex-direction: column;
-  max-height: 86px;
-}
-.form-footer-title {
-  color: $primary-body-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.form-footer-sign {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-form-footer {
-  margin-bottom: 0;
-}
-.sale-button {
-  display: flex;
-  justify-content: center;
-  border-radius: 4px;
-  padding: 10px 32px;
-  max-width: 200px;
-  max-height: 50px;
-
-  margin-left: 12px;
-
-  color: $primary-body-color;
-  background-color: $decoration-text-color;
-
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  text-align: center;
-  border: 1px solid transparent;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sale-button:hover,
-.sale-button:focus {
-  background-color: $solution-button-color;
-  cursor: pointer;
-}
-
-.sale-button .icon {
-  margin-left: 10px;
-  fill: $primary-body-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sale-button:hover .icon,
-.sale-button:focus .icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
