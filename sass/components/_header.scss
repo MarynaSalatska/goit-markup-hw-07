@@ -2,8 +2,6 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-
-
 .nav {
   display: flex;
   align-items: center;
@@ -44,7 +42,6 @@ li .link:focus {
   border-radius: 2px;
   background-color:$decoration-text-color;
 }
-
 
 .nav-list.auth {
   display: flex;

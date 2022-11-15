@@ -52,6 +52,10 @@
   &-address:focus {
     color: $decoration-text-color;
   }
+  & .container {
+    display: flex;
+    column-gap: 70px;
+  }
 }
 
 .footer-social .social-link {
@@ -81,11 +85,6 @@
   text-transform: uppercase;
   color: $primary-body-color;
   margin-bottom: 20px;
-}
-
-.footer .container {
-  display: flex;
-  column-gap: 70px;
 }
 
 .footer-social {

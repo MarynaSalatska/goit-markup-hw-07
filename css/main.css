@@ -607,6 +607,14 @@ ul.list {
 .footer-address:hover, .footer-address:focus {
   color: #2196f3;
 }
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+}
 
 .footer-social .social-link {
   display: -webkit-inline-box;
@@ -644,15 +652,6 @@ ul.list {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 70px;
-     -moz-column-gap: 70px;
-          column-gap: 70px;
 }
 
 .footer-social {
