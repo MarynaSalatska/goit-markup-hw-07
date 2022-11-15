@@ -39,6 +39,8 @@
 .modal-form-footer {
   margin-bottom: 0;
 }
+
+
 .sale-button {
   display: flex;
   justify-content: center;
@@ -63,28 +65,26 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sale-button:hover,
-.sale-button:focus {
-  background-color: $solution-button-color;
-  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $solution-button-color;
+    cursor: pointer;
+  }
+
+  & .icon {
+    margin-left: 10px;
+    fill: $primary-body-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .icon,
+  &:focus .icon {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
 }
 
-.sale-button .icon {
-  margin-left: 10px;
-  fill: $primary-body-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sale-button:hover .icon,
-.sale-button:focus .icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-list-end {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
+

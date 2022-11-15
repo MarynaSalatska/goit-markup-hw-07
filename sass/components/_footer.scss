@@ -54,7 +54,6 @@
   }
 }
 
-
 .footer-social .social-link {
   display: inline-flex;
   width: 44px;
@@ -82,7 +81,6 @@
   text-transform: uppercase;
   color: $primary-body-color;
   margin-bottom: 20px;
-  
 }
 
 .footer .container {
@@ -96,4 +94,11 @@
   flex-wrap: wrap;
   max-width: 206px;
   height: 80px;
+}
+
+.social-list-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
