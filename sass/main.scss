@@ -1,0 +1,27 @@
+  $primary-body-color: #ffffff;
+  $primary-text-color: #212121;
+  $secondary-text-color: #757575;
+  $decoration-text-color: #2196f3;
+  $accent-color: #f5f4fa;
+  $studio-color: #000000;
+  $solution-color: #2f303a;
+  $solution-button-color: #188ce8;
+  $footer-color: rgba(255, 255, 255, 0.6);
+  $icon-color: #afb1b8;
+
+@import './base/reset';
+@import './base/base';
+@import './utils/vars';
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/solution';
+@import './components/feature';
+@import './components/team';
+@import './components/page';
+@import './components/client';
+@import './components/footer';
+@import './components/solution';
+@import './components/works';
+@import './components/modal';
+
