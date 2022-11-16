@@ -53,9 +53,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 }
-
 
 .works {
   padding-top: 94px;
@@ -99,7 +97,6 @@
   }
 }
 
-
 .work {
   box-sizing: border-box;
   transition-property: box-shadow;
@@ -116,7 +113,7 @@
   }
 
   &-link {
-  text-decoration: none;
+    text-decoration: none;
   }
 
   &-top-wrap {
@@ -137,13 +134,10 @@
     transition: transform 250ms ease;
     overflow: auto;
   }
-    &__.description-portfolio {
+  &__description-portfolio {
     box-sizing: border-box;
     border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
   }
 }
-
-
-

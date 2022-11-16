@@ -837,7 +837,7 @@ ul.list {
   transition: transform 250ms ease, -webkit-transform 250ms ease;
   overflow: auto;
 }
-.work__.description-portfolio {
+.work__description-portfolio {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #eeeeee;
