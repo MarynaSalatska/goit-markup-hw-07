@@ -20,18 +20,19 @@ html, body {
 li {
   list-style: none;
 }
+
 a {
   color: inherit;
-}
-
-a:link,
-a:visited {
+  &:link,
+  &:visited {
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
+
+
 
 img {
   vertical-align: top;

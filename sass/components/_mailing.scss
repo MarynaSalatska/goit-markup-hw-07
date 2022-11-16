@@ -1,45 +1,20 @@
-.visually-hidden {
-  position: absolute;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.footer-input {
-  min-width: 358px;
-  height: 50px;
-  background: #2f303a;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .form-footer {
   display: inline-flex;
   flex-direction: column;
   max-height: 86px;
+  &__title {
+    color: $primary-body-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.form-footer-title {
-  color: $primary-body-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.form-footer-sign {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-form-footer {
-  margin-bottom: 0;
-}
-
 
 .sale-button {
   display: flex;
@@ -84,7 +59,27 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 }
 
+.visually-hidden {
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
+.footer-input {
+  min-width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.modal-form-footer {
+  margin-bottom: 0;
+}

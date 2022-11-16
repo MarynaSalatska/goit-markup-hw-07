@@ -18,39 +18,31 @@
   background-color: $primary-body-color;
 }
 
-ul.list {
-  display: flex;
-  column-gap: 30px;
-}
-
-.list li {
-  text-align: left;
-}
 
 .image {
   display: flex;
   text-align: center;
   gap: 30px;
-}
 
-.image > li {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  & > li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.image-title {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  color: inherit;
-  letter-spacing: inherit;
-}
-.image-text {
-  font-size: 16px;
-  line-height: 1.18;
-  color: $secondary-text-color;
+  &-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: inherit;
+    letter-spacing: inherit;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $secondary-text-color;
+  }
 }
 
 .social-list {
@@ -59,10 +51,12 @@ ul.list {
   align-items: center;
   justify-content: center;
   padding: 0 32px 30px 32px;
+
+  & > .social-icon:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-.social-list > .social-icon:not(:last-child) {
-  margin-right: 10px;
-}
+
 .social-link {
   display: inline-flex;
   width: 44px;
@@ -76,26 +70,24 @@ ul.list {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: $decoration-text-color;
-  color: $primary-body-color;
-}
-.social-link:hover .icon,
-.social-link:focus .icon {
-  fill: $primary-body-color;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link .icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover .icon,
-.social-link:focus .icon {
-  fill: $primary-body-color;
+  &:hover,
+  &:focus {
+    background-color: $decoration-text-color;
+    color: $primary-body-color;
+  }
+  &:hover .icon,
+  &:focus .icon {
+    fill: $primary-body-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
 }
