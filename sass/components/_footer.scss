@@ -1,7 +1,7 @@
 .footer {
-    background: $solution-color;
-    padding-bottom: 60px;
-    padding-top: 60px;
+  background: $solution-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
 
   & .studio {
     display: inline-block;
@@ -54,7 +54,6 @@
   }
   & .container {
     display: flex;
-    column-gap: 70px;
   }
   &__title {
     font-weight: 700;
@@ -63,14 +62,15 @@
     color: $primary-body-color;
     margin-bottom: 20px;
   }
-  &social {
+  &__social {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
     max-width: 206px;
     height: 80px;
+    margin-left: 70px;
   }
-& .social-link {
+  & .social-link {
     display: inline-flex;
     width: 44px;
     height: 44px;
@@ -84,15 +84,14 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-      &:hover,
-      &:focus {
-        background-color: $decoration-text-color;
-        color: $primary-body-color;
-      }
+
+    &:hover,
+    &:focus {
+      background-color: $decoration-text-color;
+      color: $primary-body-color;
+    }
   }
 }
-
 
 .social-list-end {
   display: flex;

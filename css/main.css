@@ -568,9 +568,6 @@ ul.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 70px;
-     -moz-column-gap: 70px;
-          column-gap: 70px;
 }
 .footer__title {
   font-weight: 700;
@@ -579,7 +576,7 @@ ul.list {
   color: #ffffff;
   margin-bottom: 20px;
 }
-.footersocial {
+.footer__social {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -590,6 +587,7 @@ ul.list {
       flex-wrap: wrap;
   max-width: 206px;
   height: 80px;
+  margin-left: 70px;
 }
 .footer .social-link {
   display: -webkit-inline-box;
@@ -1210,6 +1208,7 @@ b {
       -ms-flex-direction: column;
           flex-direction: column;
   max-height: 86px;
+  margin-left: 94px;
 }
 .form-footer__title {
   color: #ffffff;
